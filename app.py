@@ -13,7 +13,7 @@ with open('class_labels.json', 'r') as f:
     class_names = json.load(f)
 
 # Tentukan mana yang aman/bahaya (Sesuaikan dengan nama folder di datasetmu)
-DANGEROUS_CLASSES = ["Water_Disaster", "sea", "Infrastructure", "Earthquake", "Human_Damage", "Urban_Fire", "Wild_Fire", "Land_Slide", "Drought"]
+DANGEROUS_CLASSES = ["Water_Disaster", "Infrastructure", "Earthquake", "Human_Damage", "Urban_Fire", "Wild_Fire", "Land_Slide", "Drought"]
 
 # 2. LOAD MODEL ARCHITECTURE
 @st.cache_resource # Agar model tidak di-load berulang kali (biar cepat)
